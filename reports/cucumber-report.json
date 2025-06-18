@@ -1,0 +1,63 @@
+[
+  {
+    "description": "     Feature Login page will work depending on the user credentials.",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;sucess-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Sucess Login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "A web browser is at the saucelabs login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3650748000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2196876299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the url will contains the inventory subdirectory",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2414226199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src\\tests\\features\\login.feature"
+  }
+]

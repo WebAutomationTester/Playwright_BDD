@@ -4,48 +4,346 @@
     "elements": [
       {
         "description": "",
-        "id": "login;sucess-login",
+        "id": "login-functionality-by-different-ways;simple-login-by-passing-login-details",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Sucess Login",
+        "line": 5,
+        "name": "Simple Login by passing login details",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "A web browser is at the saucelabs login page",
             "match": {
-              "location": "src\\tests\\step-definitions\\login.ts:7"
+              "location": "src\\tests\\step-definitions\\login.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 3650748000
+              "duration": 4091267300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 7,
             "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
             "match": {
-              "location": "src\\tests\\step-definitions\\login.ts:15"
+              "location": "src\\tests\\step-definitions\\login.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 2196876299
+              "duration": 2194368700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 8,
             "name": "the url will contains the inventory subdirectory",
             "match": {
-              "location": "src\\tests\\step-definitions\\login.ts:22"
+              "location": "src\\tests\\step-definitions\\login.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 2414226199
+              "duration": 2022053200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "click on the Add to cart button",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2594582800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-by-different-ways;login-with-excel-data",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login with Excel data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "A web browser is at the saucelabs login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3856855799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I have test data from \"E:/PlayWright/playwright-cucumber-starter-1.0/src/TestData/testcases.xlsx\" for test case \"TC001\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29043100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I login with credentials from Excel",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2162251199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the expected result from Excel",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6542400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the url will contains the inventory subdirectory",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2015827499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "click on the Add to cart button",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2528959300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-by-different-ways;login-with-different-credentials",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Login with different credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "A web browser is at the saucelabs login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3689098099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I enter \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201446599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see \"https://www.saucedemo.com/inventory.html\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8852399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-by-different-ways;login-with-different-credentials",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Login with different credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "A web browser is at the saucelabs login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3709412300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I enter \"invalid\" and \"wrongpass\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157595100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see \"error message\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 765099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality-by-different-ways;login-with-data-tables-for-complex-parameters",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Login with Data Tables for Complex Parameters",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "A web browser is at the saucelabs login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3627996599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "username",
+                      "standard_user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "secret_sauce"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "result",
+                      "https://www.saucedemo.com/inventory.html"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I enter the following details:",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165499600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "result",
+                      "https://www.saucedemo.com/inventory.html"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Login should be successful",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6866399
             }
           }
         ],
@@ -53,10 +351,10 @@
         "type": "scenario"
       }
     ],
-    "id": "login",
+    "id": "login-functionality-by-different-ways",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login",
+    "name": "Login Functionality by different ways",
     "tags": [],
     "uri": "src\\tests\\features\\login.feature"
   }

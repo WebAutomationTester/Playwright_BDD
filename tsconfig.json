@@ -1,14 +1,31 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
+        "target": "es6",
+        "types": ["@cucumber/cucumber", "node"],
         "module": "CommonJS",
+      "allowImportingTsExtensions": true,
+       "noEmit": true,  // Required with allowImportingTsExtensions
+    //    "emitDeclarationOnly": true,
         "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
         "esModuleInterop": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "baseUrl": "./src",
+        "paths": {
+      "@pages/*": ["Pages/*"]
+    }
+        //  "paths": {"@testdata/*": ["TestData/*"] }  // no need already meantioned in include
     },
+
     "include": [
-        "src/**/*"
+        "src/**/*", 
+        "src/config/cucumber.js", 
+        "TestData/**/*", 
+        "Pages/**/*",
+        "Pages/base_Page.ts" 
     ],
+
     "exclude": [
         "node_modules"
     ]
